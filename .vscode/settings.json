@@ -1,0 +1,43 @@
+{
+  "files.associations": {
+    ".babelrc": "jsonc",
+    ".eslintrc": "jsonc",
+    ".prettierrc": "jsonc",
+    ".eslintignore": "ignore"
+  },
+
+  "javascript.validate.enable": false,
+  "javascript.format.enable": false,
+  "typescript.format.enable": false,
+
+  "css.validate": true,
+  "less.validate": true,
+  "scss.validate": true,
+
+  // ESLint 配置
+  "eslint.format.enable": true,
+  // 保存时自动 fix lint
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    // For ESLint
+    "source.fixAll.eslint": true,
+    // For Stylelint
+    "source.fixAll.stylelint": true
+  },
+  // 保存时自动格式化
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // SFC 类型检查
+  "vetur.experimental.templateInterpolationService": true,
+
+  "vetur.validation.template": true,
+
+  "vetur.validation.templateProps": true,
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "dist": true,
+    "npm-debug.log.*": true,
+    "*.{css,sass,scss}.d.ts": true
+  }
+}
